@@ -55,6 +55,11 @@ p {
   background-color: rgba(87, 199, 133, 1);
 }
 
+/* Utylities */
+.bg_primary {
+  background: var(--pomp-power-color);
+}
+
 /* Container */
 .container {
   max-width: 1150px;
@@ -106,10 +111,33 @@ p {
   font-weight: 600;
 }
 
+/* Hero */
+.hero {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2.2rem;
+  line-height: 1.4;
+  font-weight: normal;
+}
+
 /* Media Queries */
 @media screen and (max-width: 768px) {
   .header .header_flex {
     flex-direction: column;
     gap: 1.5rem;
+  }
+
+  .hero {
+    height: 300px;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
   }
 }
