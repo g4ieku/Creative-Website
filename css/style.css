@@ -164,6 +164,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
 }
 
 .footer_flex img {
@@ -181,7 +182,8 @@ p {
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
-  .header .header_flex {
+  .header .header_flex,
+  .footer .footer_flex {
     flex-direction: column;
     gap: 1.5rem;
   }
@@ -197,12 +199,6 @@ p {
   .gallery_item {
     width: calc(50% - 20px);
     border-radius: 10px;
-  }
-
-  .footer .footer_flex {
-    flex-direction: column;
-    gap: 20px;
-    text-align: center;
   }
 
   .footer .footer_flex img {
