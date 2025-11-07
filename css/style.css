@@ -16,6 +16,7 @@
 
   --white-color: #fff;
   --txt-color: #000;
+  --dark-color: #333;
 
   --container-narrow: 900px;
   --container-normal: 1150px;
@@ -64,12 +65,32 @@ h4 {
 /* Utylities */
 .bg_primary {
   background: var(--pomp-power-color);
+  color: var(--white-color);
+}
+
+.bg_dark {
+  background: var(--dark-color);
+  color: var(--white-color);
+}
+
+.bg_dark .bg_primary {
+  padding: 0 0.3rem;
 }
 
 .section_heading {
   text-align: center;
   font-size: 2.7rem;
   margin-bottom: 2rem;
+}
+
+.visually_hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 /* Container */
@@ -210,6 +231,54 @@ h4 {
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
+}
+
+/* Contact */
+.contact {
+  padding: 3rem 0 4rem;
+}
+
+.contact p {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.form_group button {
+  margin: 2rem 0;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 1.25rem 1rem;
+  border-bottom: 1px solid var(--dark-color);
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.contact textarea {
+  height: 200px;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  outline: none;
+}
+
+.contact .btn {
+  width: 100%;
+  display: inline-block;
+  padding: 1.25rem 1rem;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  transition: all 0.35s ease-in-out;
+}
+
+.contact .btn:hover {
+  letter-spacing: 1px;
+  background: var(--dark-magneta-color);
+  color: var(--white-color);
 }
 
 /* Media Queries */
